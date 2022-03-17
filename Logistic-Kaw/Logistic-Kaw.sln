@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapters", "Adapters", "{B03561D2-FEC0-4A2B-8D3B-9E86FCF45320}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{989509CC-98AD-4DC3-B89D-7C526A982436}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogisticKaw.Domain", "LogisticKaw.Domain\LogisticKaw.Domain.csproj", "{2216A048-D5D5-41CC-A5EC-92CC61DDFF21}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogisticKaw.Application", "LogisticKaw.Application\LogisticKaw.Application.csproj", "{05203DE7-ADD2-4EF9-AF94-420621904650}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Driving", "Driving", "{0933A7B0-9CA6-4732-A3E2-922EAC47091B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Driven", "Driven", "{BF34CCB9-E394-491F-A669-DD767AF6149A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogisticKaw.IdentityServer", "LogisticKaw.IdentityServer\LogisticKaw.IdentityServer.csproj", "{88A07096-3CDC-400A-B56A-03BE144E499B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogisticKaw.Infra.Dapper", "LogisticKaw.Infra.Dapper\LogisticKaw.Infra.Dapper.csproj", "{E201F585-9157-4DE8-8C1E-2CDD97F3F847}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2216A048-D5D5-41CC-A5EC-92CC61DDFF21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2216A048-D5D5-41CC-A5EC-92CC61DDFF21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2216A048-D5D5-41CC-A5EC-92CC61DDFF21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2216A048-D5D5-41CC-A5EC-92CC61DDFF21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05203DE7-ADD2-4EF9-AF94-420621904650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05203DE7-ADD2-4EF9-AF94-420621904650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05203DE7-ADD2-4EF9-AF94-420621904650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05203DE7-ADD2-4EF9-AF94-420621904650}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88A07096-3CDC-400A-B56A-03BE144E499B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88A07096-3CDC-400A-B56A-03BE144E499B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88A07096-3CDC-400A-B56A-03BE144E499B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88A07096-3CDC-400A-B56A-03BE144E499B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E201F585-9157-4DE8-8C1E-2CDD97F3F847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E201F585-9157-4DE8-8C1E-2CDD97F3F847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E201F585-9157-4DE8-8C1E-2CDD97F3F847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E201F585-9157-4DE8-8C1E-2CDD97F3F847}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2216A048-D5D5-41CC-A5EC-92CC61DDFF21} = {989509CC-98AD-4DC3-B89D-7C526A982436}
+		{05203DE7-ADD2-4EF9-AF94-420621904650} = {989509CC-98AD-4DC3-B89D-7C526A982436}
+		{0933A7B0-9CA6-4732-A3E2-922EAC47091B} = {B03561D2-FEC0-4A2B-8D3B-9E86FCF45320}
+		{BF34CCB9-E394-491F-A669-DD767AF6149A} = {B03561D2-FEC0-4A2B-8D3B-9E86FCF45320}
+		{88A07096-3CDC-400A-B56A-03BE144E499B} = {0933A7B0-9CA6-4732-A3E2-922EAC47091B}
+		{E201F585-9157-4DE8-8C1E-2CDD97F3F847} = {BF34CCB9-E394-491F-A669-DD767AF6149A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4DDED04-CFD0-4459-986E-C7B2C7780BD3}
+	EndGlobalSection
+EndGlobal
