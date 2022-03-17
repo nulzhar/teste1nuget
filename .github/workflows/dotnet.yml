@@ -12,10 +12,6 @@ jobs:
       CAMINHO_PROJETO: ./Logistic-Kaw/LogisticKaw.Domain/LogisticKaw.Domain.csproj
 
     runs-on: ubuntu-latest
-  
-  build:
-
-    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
