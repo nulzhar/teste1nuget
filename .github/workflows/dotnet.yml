@@ -1,0 +1,33 @@
+name: .NET
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  pack-push:
+    env:
+      CAMINHO_PROJETO: ./Logistic-Kaw/LogisticKaw.Domain/LogisticKaw.Domain.csproj
+
+    runs-on: ubuntu-latest
+  
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    
+    - name: Geração do package
+      run: dotnet pack ${{ env.CAMINHO_PROJETO }} -c Release -o out
+
+    - name: Push no NuGet
+      run: |
+        cd out
+        dotnet nuget push *.nupkg --api-key oy2e4swai47w7lpjnvqa4ktjvm6ec3uevckmgsupqqs4eq --source https://api.nuget.org/v3/index.json --skip-duplicate
